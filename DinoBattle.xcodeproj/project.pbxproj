@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		454362671C6907FA00EC2350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362661C6907FA00EC2350 /* AppDelegate.swift */; };
+		454362691C6907FA00EC2350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362681C6907FA00EC2350 /* ViewController.swift */; };
+		4543626C1C6907FA00EC2350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4543626A1C6907FA00EC2350 /* Main.storyboard */; };
+		4543626E1C6907FA00EC2350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4543626D1C6907FA00EC2350 /* Assets.xcassets */; };
+		454362711C6907FA00EC2350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4543626F1C6907FA00EC2350 /* LaunchScreen.storyboard */; };
+		4543627C1C6907FA00EC2350 /* DinoBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543627B1C6907FA00EC2350 /* DinoBattleTests.swift */; };
+		454362871C6907FA00EC2350 /* DinoBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362861C6907FA00EC2350 /* DinoBattleUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		454362781C6907FA00EC2350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4543625B1C6907FA00EC2350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454362621C6907FA00EC2350;
+			remoteInfo = DinoBattle;
+		};
+		454362831C6907FA00EC2350 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4543625B1C6907FA00EC2350 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 454362621C6907FA00EC2350;
+			remoteInfo = DinoBattle;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		454362631C6907FA00EC2350 /* DinoBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		454362661C6907FA00EC2350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		454362681C6907FA00EC2350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4543626B1C6907FA00EC2350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4543626D1C6907FA00EC2350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		454362701C6907FA00EC2350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		454362721C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454362771C6907FA00EC2350 /* DinoBattleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoBattleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4543627B1C6907FA00EC2350 /* DinoBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBattleTests.swift; sourceTree = "<group>"; };
+		4543627D1C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454362821C6907FA00EC2350 /* DinoBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		454362861C6907FA00EC2350 /* DinoBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBattleUITests.swift; sourceTree = "<group>"; };
+		454362881C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		454362601C6907FA00EC2350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454362741C6907FA00EC2350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4543627F1C6907FA00EC2350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4543625A1C6907FA00EC2350 = {
+			isa = PBXGroup;
+			children = (
+				454362651C6907FA00EC2350 /* DinoBattle */,
+				4543627A1C6907FA00EC2350 /* DinoBattleTests */,
+				454362851C6907FA00EC2350 /* DinoBattleUITests */,
+				454362641C6907FA00EC2350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		454362641C6907FA00EC2350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				454362631C6907FA00EC2350 /* DinoBattle.app */,
+				454362771C6907FA00EC2350 /* DinoBattleTests.xctest */,
+				454362821C6907FA00EC2350 /* DinoBattleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		454362651C6907FA00EC2350 /* DinoBattle */ = {
+			isa = PBXGroup;
+			children = (
+				454362661C6907FA00EC2350 /* AppDelegate.swift */,
+				454362681C6907FA00EC2350 /* ViewController.swift */,
+				4543626A1C6907FA00EC2350 /* Main.storyboard */,
+				4543626D1C6907FA00EC2350 /* Assets.xcassets */,
+				4543626F1C6907FA00EC2350 /* LaunchScreen.storyboard */,
+				454362721C6907FA00EC2350 /* Info.plist */,
+			);
+			path = DinoBattle;
+			sourceTree = "<group>";
+		};
+		4543627A1C6907FA00EC2350 /* DinoBattleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4543627B1C6907FA00EC2350 /* DinoBattleTests.swift */,
+				4543627D1C6907FA00EC2350 /* Info.plist */,
+			);
+			path = DinoBattleTests;
+			sourceTree = "<group>";
+		};
+		454362851C6907FA00EC2350 /* DinoBattleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				454362861C6907FA00EC2350 /* DinoBattleUITests.swift */,
+				454362881C6907FA00EC2350 /* Info.plist */,
+			);
+			path = DinoBattleUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		454362621C6907FA00EC2350 /* DinoBattle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4543628B1C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattle" */;
+			buildPhases = (
+				4543625F1C6907FA00EC2350 /* Sources */,
+				454362601C6907FA00EC2350 /* Frameworks */,
+				454362611C6907FA00EC2350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DinoBattle;
+			productName = DinoBattle;
+			productReference = 454362631C6907FA00EC2350 /* DinoBattle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		454362761C6907FA00EC2350 /* DinoBattleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4543628E1C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattleTests" */;
+			buildPhases = (
+				454362731C6907FA00EC2350 /* Sources */,
+				454362741C6907FA00EC2350 /* Frameworks */,
+				454362751C6907FA00EC2350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454362791C6907FA00EC2350 /* PBXTargetDependency */,
+			);
+			name = DinoBattleTests;
+			productName = DinoBattleTests;
+			productReference = 454362771C6907FA00EC2350 /* DinoBattleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		454362811C6907FA00EC2350 /* DinoBattleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 454362911C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattleUITests" */;
+			buildPhases = (
+				4543627E1C6907FA00EC2350 /* Sources */,
+				4543627F1C6907FA00EC2350 /* Frameworks */,
+				454362801C6907FA00EC2350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				454362841C6907FA00EC2350 /* PBXTargetDependency */,
+			);
+			name = DinoBattleUITests;
+			productName = DinoBattleUITests;
+			productReference = 454362821C6907FA00EC2350 /* DinoBattleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4543625B1C6907FA00EC2350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Minni K Ang";
+				TargetAttributes = {
+					454362621C6907FA00EC2350 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					454362761C6907FA00EC2350 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 454362621C6907FA00EC2350;
+					};
+					454362811C6907FA00EC2350 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 454362621C6907FA00EC2350;
+					};
+				};
+			};
+			buildConfigurationList = 4543625E1C6907FA00EC2350 /* Build configuration list for PBXProject "DinoBattle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4543625A1C6907FA00EC2350;
+			productRefGroup = 454362641C6907FA00EC2350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				454362621C6907FA00EC2350 /* DinoBattle */,
+				454362761C6907FA00EC2350 /* DinoBattleTests */,
+				454362811C6907FA00EC2350 /* DinoBattleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		454362611C6907FA00EC2350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454362711C6907FA00EC2350 /* LaunchScreen.storyboard in Resources */,
+				4543626E1C6907FA00EC2350 /* Assets.xcassets in Resources */,
+				4543626C1C6907FA00EC2350 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454362751C6907FA00EC2350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454362801C6907FA00EC2350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4543625F1C6907FA00EC2350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454362691C6907FA00EC2350 /* ViewController.swift in Sources */,
+				454362671C6907FA00EC2350 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		454362731C6907FA00EC2350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4543627C1C6907FA00EC2350 /* DinoBattleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4543627E1C6907FA00EC2350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				454362871C6907FA00EC2350 /* DinoBattleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		454362791C6907FA00EC2350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454362621C6907FA00EC2350 /* DinoBattle */;
+			targetProxy = 454362781C6907FA00EC2350 /* PBXContainerItemProxy */;
+		};
+		454362841C6907FA00EC2350 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 454362621C6907FA00EC2350 /* DinoBattle */;
+			targetProxy = 454362831C6907FA00EC2350 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4543626A1C6907FA00EC2350 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4543626B1C6907FA00EC2350 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4543626F1C6907FA00EC2350 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				454362701C6907FA00EC2350 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		454362891C6907FA00EC2350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4543628A1C6907FA00EC2350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4543628C1C6907FA00EC2350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DinoBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4543628D1C6907FA00EC2350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DinoBattle/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattle;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4543628F1C6907FA00EC2350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DinoBattleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinoBattle.app/DinoBattle";
+			};
+			name = Debug;
+		};
+		454362901C6907FA00EC2350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DinoBattleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DinoBattle.app/DinoBattle";
+			};
+			name = Release;
+		};
+		454362921C6907FA00EC2350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DinoBattleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DinoBattle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		454362931C6907FA00EC2350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DinoBattleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DinoBattle;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4543625E1C6907FA00EC2350 /* Build configuration list for PBXProject "DinoBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454362891C6907FA00EC2350 /* Debug */,
+				4543628A1C6907FA00EC2350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4543628B1C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4543628C1C6907FA00EC2350 /* Debug */,
+				4543628D1C6907FA00EC2350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4543628E1C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4543628F1C6907FA00EC2350 /* Debug */,
+				454362901C6907FA00EC2350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		454362911C6907FA00EC2350 /* Build configuration list for PBXNativeTarget "DinoBattleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				454362921C6907FA00EC2350 /* Debug */,
+				454362931C6907FA00EC2350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4543625B1C6907FA00EC2350 /* Project object */;
+}
