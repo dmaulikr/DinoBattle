@@ -3,17 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		454362671C6907FA00EC2350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362661C6907FA00EC2350 /* AppDelegate.swift */; };
-		454362691C6907FA00EC2350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362681C6907FA00EC2350 /* ViewController.swift */; };
 		4543626C1C6907FA00EC2350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4543626A1C6907FA00EC2350 /* Main.storyboard */; };
 		4543626E1C6907FA00EC2350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4543626D1C6907FA00EC2350 /* Assets.xcassets */; };
 		454362711C6907FA00EC2350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4543626F1C6907FA00EC2350 /* LaunchScreen.storyboard */; };
 		4543627C1C6907FA00EC2350 /* DinoBattleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543627B1C6907FA00EC2350 /* DinoBattleTests.swift */; };
 		454362871C6907FA00EC2350 /* DinoBattleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362861C6907FA00EC2350 /* DinoBattleUITests.swift */; };
+		454362951C690BB800EC2350 /* Carnivore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362941C690BB800EC2350 /* Carnivore.swift */; };
+		454362971C690BC000EC2350 /* Dino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362961C690BC000EC2350 /* Dino.swift */; };
+		454362991C690BD400EC2350 /* Herbivore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 454362981C690BD400EC2350 /* Herbivore.swift */; };
+		4543629D1C690C0000EC2350 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543629C1C690C0000EC2350 /* Player.swift */; };
+		4543629F1C690C2700EC2350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4543629E1C690C2700EC2350 /* ViewController.swift */; };
+		454362A81C690F2300EC2350 /* battleMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A01C690F2300EC2350 /* battleMusic.mp3 */; };
+		454362A91C690F2300EC2350 /* Diplodocus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A11C690F2300EC2350 /* Diplodocus.mp3 */; };
+		454362AA1C690F2300EC2350 /* introMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A21C690F2300EC2350 /* introMusic.mp3 */; };
+		454362AB1C690F2300EC2350 /* Spinosaurus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A31C690F2300EC2350 /* Spinosaurus.mp3 */; };
+		454362AC1C690F2300EC2350 /* Stegosaurus.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A41C690F2300EC2350 /* Stegosaurus.mp3 */; };
+		454362AD1C690F2300EC2350 /* T-Rex.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A51C690F2300EC2350 /* T-Rex.mp3 */; };
+		454362AE1C690F2300EC2350 /* Triceratops.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A61C690F2300EC2350 /* Triceratops.mp3 */; };
+		454362AF1C690F2300EC2350 /* Velociraptor.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 454362A71C690F2300EC2350 /* Velociraptor.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +48,29 @@
 /* Begin PBXFileReference section */
 		454362631C6907FA00EC2350 /* DinoBattle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DinoBattle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454362661C6907FA00EC2350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		454362681C6907FA00EC2350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4543626B1C6907FA00EC2350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4543626D1C6907FA00EC2350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		454362701C6907FA00EC2350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		454362721C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		454362771C6907FA00EC2350 /* DinoBattleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoBattleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4543627B1C6907FA00EC2350 /* DinoBattleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBattleTests.swift; sourceTree = "<group>"; };
 		4543627D1C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		454362821C6907FA00EC2350 /* DinoBattleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DinoBattleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		454362861C6907FA00EC2350 /* DinoBattleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoBattleUITests.swift; sourceTree = "<group>"; };
 		454362881C6907FA00EC2350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		454362941C690BB800EC2350 /* Carnivore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Carnivore.swift; sourceTree = "<group>"; };
+		454362961C690BC000EC2350 /* Dino.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dino.swift; sourceTree = "<group>"; };
+		454362981C690BD400EC2350 /* Herbivore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Herbivore.swift; sourceTree = "<group>"; };
+		4543629A1C690BF200EC2350 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4543629C1C690C0000EC2350 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4543629E1C690C2700EC2350 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		454362A01C690F2300EC2350 /* battleMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battleMusic.mp3; sourceTree = "<group>"; };
+		454362A11C690F2300EC2350 /* Diplodocus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Diplodocus.mp3; sourceTree = "<group>"; };
+		454362A21C690F2300EC2350 /* introMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = introMusic.mp3; sourceTree = "<group>"; };
+		454362A31C690F2300EC2350 /* Spinosaurus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Spinosaurus.mp3; sourceTree = "<group>"; };
+		454362A41C690F2300EC2350 /* Stegosaurus.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Stegosaurus.mp3; sourceTree = "<group>"; };
+		454362A51C690F2300EC2350 /* T-Rex.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "T-Rex.mp3"; sourceTree = "<group>"; };
+		454362A61C690F2300EC2350 /* Triceratops.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Triceratops.mp3; sourceTree = "<group>"; };
+		454362A71C690F2300EC2350 /* Velociraptor.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Velociraptor.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +121,24 @@
 		454362651C6907FA00EC2350 /* DinoBattle */ = {
 			isa = PBXGroup;
 			children = (
-				454362661C6907FA00EC2350 /* AppDelegate.swift */,
-				454362681C6907FA00EC2350 /* ViewController.swift */,
-				4543626A1C6907FA00EC2350 /* Main.storyboard */,
-				4543626D1C6907FA00EC2350 /* Assets.xcassets */,
 				4543626F1C6907FA00EC2350 /* LaunchScreen.storyboard */,
-				454362721C6907FA00EC2350 /* Info.plist */,
+				4543626A1C6907FA00EC2350 /* Main.storyboard */,
+				454362661C6907FA00EC2350 /* AppDelegate.swift */,
+				454362941C690BB800EC2350 /* Carnivore.swift */,
+				454362961C690BC000EC2350 /* Dino.swift */,
+				454362981C690BD400EC2350 /* Herbivore.swift */,
+				4543629C1C690C0000EC2350 /* Player.swift */,
+				4543629E1C690C2700EC2350 /* ViewController.swift */,
+				454362A21C690F2300EC2350 /* introMusic.mp3 */,
+				454362A01C690F2300EC2350 /* battleMusic.mp3 */,
+				454362A11C690F2300EC2350 /* Diplodocus.mp3 */,
+				454362A31C690F2300EC2350 /* Spinosaurus.mp3 */,
+				454362A41C690F2300EC2350 /* Stegosaurus.mp3 */,
+				454362A51C690F2300EC2350 /* T-Rex.mp3 */,
+				454362A61C690F2300EC2350 /* Triceratops.mp3 */,
+				454362A71C690F2300EC2350 /* Velociraptor.mp3 */,
+				4543626D1C6907FA00EC2350 /* Assets.xcassets */,
+				4543629A1C690BF200EC2350 /* Info.plist */,
 			);
 			path = DinoBattle;
 			sourceTree = "<group>";
@@ -193,6 +229,7 @@
 				TargetAttributes = {
 					454362621C6907FA00EC2350 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7LVD7K98P2;
 					};
 					454362761C6907FA00EC2350 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -205,7 +242,7 @@
 				};
 			};
 			buildConfigurationList = 4543625E1C6907FA00EC2350 /* Build configuration list for PBXProject "DinoBattle" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -229,8 +266,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				454362AB1C690F2300EC2350 /* Spinosaurus.mp3 in Resources */,
+				454362AC1C690F2300EC2350 /* Stegosaurus.mp3 in Resources */,
+				454362A81C690F2300EC2350 /* battleMusic.mp3 in Resources */,
+				454362AF1C690F2300EC2350 /* Velociraptor.mp3 in Resources */,
 				454362711C6907FA00EC2350 /* LaunchScreen.storyboard in Resources */,
+				454362AD1C690F2300EC2350 /* T-Rex.mp3 in Resources */,
 				4543626E1C6907FA00EC2350 /* Assets.xcassets in Resources */,
+				454362A91C690F2300EC2350 /* Diplodocus.mp3 in Resources */,
+				454362AE1C690F2300EC2350 /* Triceratops.mp3 in Resources */,
+				454362AA1C690F2300EC2350 /* introMusic.mp3 in Resources */,
 				4543626C1C6907FA00EC2350 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,8 +301,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454362691C6907FA00EC2350 /* ViewController.swift in Sources */,
+				4543629F1C690C2700EC2350 /* ViewController.swift in Sources */,
 				454362671C6907FA00EC2350 /* AppDelegate.swift in Sources */,
+				454362991C690BD400EC2350 /* Herbivore.swift in Sources */,
+				454362951C690BB800EC2350 /* Carnivore.swift in Sources */,
+				4543629D1C690C0000EC2350 /* Player.swift in Sources */,
+				454362971C690BC000EC2350 /* Dino.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +448,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DinoBattle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -410,7 +461,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DinoBattle/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CreativeIce.DinoBattle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
