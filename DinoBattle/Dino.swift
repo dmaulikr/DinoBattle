@@ -33,7 +33,7 @@ class Dino {
 	}
 	
 	init() {
-	}
+ 	}
 	
 	func attemptAttack(attack: Int, defense: Int, inout hp: Int) -> (Bool, Int) {
 		let attackStrength = attack - defense
