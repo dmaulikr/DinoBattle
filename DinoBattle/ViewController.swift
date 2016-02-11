@@ -36,8 +36,9 @@ class ViewController: UIViewController {
 	@IBOutlet weak var yesButton: UIButton!
 	@IBOutlet weak var noButton: UIButton!
 	@IBOutlet weak var gameOverButton: UIButton!
-	
-	var tRex = Carnivore(name: "T-Rex", attack: 28)
+    @IBOutlet weak var battleButton: UIButton!
+
+    var tRex = Carnivore(name: "T-Rex", attack: 28)
 	var spinosaurus = Carnivore(name: "Spinosaurus", attack: 25)
 	var velociraptor = Carnivore(name: "Velociraptor", attack: 22)
 	
@@ -62,6 +63,8 @@ class ViewController: UIViewController {
 	var player2Roar = AVAudioPlayer()
 	var roar1Name: String!
 	var roar2Name: String!
+    var image1: UIImage!
+    var image2: UIImage!
 	
 	var bgMusic = AVAudioPlayer()
 	var introMusic = AVAudioPlayer()
@@ -69,7 +72,9 @@ class ViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		
-		playerOneHpLabel.hidden = true
+        playerOne.hidden = true
+        playerTwo.hidden = true
+        playerOneHpLabel.hidden = true
 		playerTwoHpLabel.hidden = true
 		playerOneFightButton.hidden = true
 		playerTwoFightButton.hidden = true
@@ -78,6 +83,7 @@ class ViewController: UIViewController {
 		noButton.hidden = true
 		nextButton.hidden = true
 		gameOverButton.hidden = true
+        battleButton.hidden = true
         
 		let bounds = self.choiceButton.bounds
 
@@ -87,11 +93,7 @@ class ViewController: UIViewController {
 
         UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [.Repeat, .AllowUserInteraction, .CurveEaseOut],  animations: {self.nextButton.transform = CGAffineTransformMakeScale(1.2, 1.2)}, completion: {finish in UIView.animateWithDuration(3) {self.nextButton.transform = CGAffineTransformIdentity}} )
         
-        UIView.animateWithDuration(3, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [.Repeat, .AllowUserInteraction, .CurveEaseInOut],  animations: {
-            self.gameOverButton.transform = CGAffineTransformMakeRotation(CGFloat(-M_PI_4/6))
-            self.gameOverButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4/6))
-            self.gameOverButton.transform = CGAffineTransformMakeRotation(0.0)
-            }, completion: {finish in UIView.animateWithDuration(3) {self.gameOverButton.transform = CGAffineTransformIdentity}} )
+        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [.Repeat, .AllowUserInteraction, .CurveEaseOut],  animations: {self.gameOverButton.transform = CGAffineTransformMakeScale(1.2, 1.2)}, completion: {finish in UIView.animateWithDuration(2) {self.gameOverButton.transform = CGAffineTransformIdentity}} )
         
 		UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [.Repeat, .AllowUserInteraction, .CurveEaseOut],  animations: {self.yesButton.transform = CGAffineTransformMakeScale(1.2, 1.2)}, completion: {finish in UIView.animateWithDuration(2) {self.yesButton.transform = CGAffineTransformIdentity}} )
 
@@ -101,7 +103,9 @@ class ViewController: UIViewController {
 			self.noButton.transform = CGAffineTransformMakeRotation(0.0)
 			}, completion: {finish in UIView.animateWithDuration(2) {self.noButton.transform = CGAffineTransformIdentity}} )
 
-		do {
+        UIView.animateWithDuration(2, delay: 0, usingSpringWithDamping: 0.2, initialSpringVelocity: 0, options: [.Repeat, .AllowUserInteraction, .CurveEaseOut],  animations: {self.battleButton.transform = CGAffineTransformMakeScale(1.1, 1.1)}, completion: {finish in UIView.animateWithDuration(2) {self.battleButton.transform = CGAffineTransformIdentity}} )
+
+        do {
 			try introMusic = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("introMusic", ofType: "mp3")!))
 			
 			introMusic.prepareToPlay()
@@ -111,7 +115,6 @@ class ViewController: UIViewController {
 		} catch let error as NSError {
 			print(error.debugDescription)
 		}
-		
 	}
     
 	@IBAction func chooseDino(sender: AnyObject) {
@@ -197,7 +200,7 @@ class ViewController: UIViewController {
 
 		UIView.animateWithDuration(0.05, delay: 0, options: .CurveLinear,  animations: {self.playerOne.transform = CGAffineTransformMakeTranslation(30, 0)}, completion: {finish in UIView.animateWithDuration(0.05) {self.playerOne.transform = CGAffineTransformIdentity}} )
 
-		UIView.animateWithDuration(0.1, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerTwo.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.1) {self.playerTwo.transform = CGAffineTransformIdentity}})
+		UIView.animateWithDuration(0.05, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerTwo.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.05) {self.playerTwo.transform = CGAffineTransformIdentity}})
 		
 		player1.attemptAttack(player1.attack, defense: player2.defense, hp: &player2.hp)
 		infoLabel.text = "\(roar2Name) Hit!!"
@@ -218,7 +221,7 @@ class ViewController: UIViewController {
 
 		UIView.animateWithDuration(0.05, delay: 0, options: .CurveLinear,  animations: {self.playerTwo.transform = CGAffineTransformMakeTranslation(-30, 0)}, completion: {finish in UIView.animateWithDuration(0.05) {self.playerTwo.transform = CGAffineTransformIdentity}})
 
-		UIView.animateWithDuration(0.1, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerOne.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.1) {self.playerOne.transform = CGAffineTransformIdentity}})
+		UIView.animateWithDuration(0.05, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerOne.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.05) {self.playerOne.transform = CGAffineTransformIdentity}})
 
 		player2.attemptAttack(player2.attack, defense: player1.defense, hp: &player1.hp)
 		infoLabel.text = "\(roar1Name) Hit!!"
@@ -272,17 +275,17 @@ class ViewController: UIViewController {
 		infoLabel.hidden = false
 		
 		if player.order == 1 {
+
+            player1Choice = currentChoice
 			player1 = dino
-			player1Choice = currentChoice
             
-            let image1 = UIImage(named: name + "1")
-			playerOne.image = image1
-            playerOne.contentMode = .ScaleAspectFit
-            playerOne.hidden = false
+            image1 = UIImage(named: name + "1")
+            playerOne.image = image1
             
  			roar1Name = name
 			deadName = name + "2"
-            
+            playerOneHpLabel.text = roar1Name
+
 			hideChoices()
 			infoLabel.text = "Player 2, choose your dinosaur"
 			nextButton.hidden = false
@@ -290,28 +293,38 @@ class ViewController: UIViewController {
 			
 		} else {
 			
-			let image2 = UIImage(named: name + "1")?.imageFlippedForRightToLeftLayoutDirection()
+			image2 = UIImage(named: name + "1")?.imageFlippedForRightToLeftLayoutDirection()
             playerTwo.image = image2
-            playerTwo.contentMode = .ScaleAspectFit
-            playerTwo.hidden = false
             
  			roar2Name = name
+            playerTwoHpLabel.text = roar2Name
 
 			if currentChoice != player1Choice {
 				player2 = dino
-				
+  				
 			} else {
-				dino.duplicate = true
 				let duplicateDino = Dino()
+                duplicateDino.duplicate = true
 				duplicateDino.hp = dino.hp
 				duplicateDino.attack = dino.attack
 				duplicateDino.defense = dino.defense
 				player2 = duplicateDino
 			}
- 
-			startBattle()
-		}
-	}
+            
+            hideChoices()
+            infoLabel.text = ""
+            battleButton.hidden = false
+            
+            playerOne.hidden = false
+            playerTwo.hidden = false
+            playerOne.startAnimating()
+            playerTwo.startAnimating()
+
+            UIView.animateWithDuration(0.1, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerOne.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.1) {self.playerOne.transform = CGAffineTransformIdentity}})
+            UIView.animateWithDuration(0.1, delay: 0, usingSpringWithDamping: 0.05, initialSpringVelocity: 10, options: .CurveLinear,  animations: {self.playerTwo.transform = CGAffineTransformMakeScale(1.03, 1.03)}, completion: {finish in UIView.animateWithDuration(0.1) {self.playerTwo.transform = CGAffineTransformIdentity}})
+
+        }
+    }
     
 	
 	@IBAction func getPlayerTwoChoice(sender: AnyObject) {
@@ -321,20 +334,22 @@ class ViewController: UIViewController {
 		requestChoice()
 	}
 	
-	func startBattle() {
+    @IBAction func startBattle(sender: AnyObject) {
+        
         infoLabel.text = "\(roar1Name) vs \(roar2Name)"
-		introMusic.stop()
-		playBgMusic()
-		hideChoices()
+        battleButton.hidden = true
+        
+        introMusic.stop()
+        playBgMusic()
         playerOneFightButton.enabled = true
         playerTwoFightButton.enabled = true
-		playerOneFightButton.hidden = false
-		playerTwoFightButton.hidden = false
-		playerOneHpLabel.text = "\(player1.hp) HP"
-		playerTwoHpLabel.text = "\(player2.hp) HP"
-		playerOneHpLabel.hidden = false
-		playerTwoHpLabel.hidden = false
-	}
+        playerOneFightButton.hidden = false
+        playerTwoFightButton.hidden = false
+        playerOneHpLabel.hidden = false
+        playerTwoHpLabel.hidden = false
+        playerOneHpLabel.text = "\(player1.hp) HP"
+        playerTwoHpLabel.text = "\(player2.hp) HP"
+    }
 	
 	@IBAction func gameOver(sender: AnyObject) {
 		playerOneHpLabel.hidden = true
