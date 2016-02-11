@@ -54,13 +54,13 @@
                                 </variation>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-1d-MMY" userLabel="BattleStack View">
-                                <rect key="frame" x="-17" y="120" width="634" height="480"/>
+                                <rect key="frame" x="-32" y="120" width="664" height="480"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="d4D-8E-t0V" userLabel="hpLblStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="634" height="72"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="664" height="72"/>
                                         <subviews>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qew-8d-SMb" userLabel="playerOneHpLabel">
-                                                <rect key="frame" x="0.0" y="31" width="317" height="41"/>
+                                                <rect key="frame" x="0.0" y="31" width="332" height="41"/>
                                                 <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=compact-widthClass=compact">
@@ -68,7 +68,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-Tf-oM7" userLabel="playerTwoHpLabel">
-                                                <rect key="frame" x="317" y="31" width="317" height="41"/>
+                                                <rect key="frame" x="332" y="31" width="332" height="41"/>
                                                 <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
                                                 <nil key="highlightedColor"/>
                                                 <variation key="heightClass=compact-widthClass=compact">
@@ -77,19 +77,20 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="ER4-p6-7h8" userLabel="playerStack">
-                                        <rect key="frame" x="0.0" y="72" width="634" height="336"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ER4-p6-7h8" userLabel="playerStack">
+                                        <rect key="frame" x="0.0" y="72" width="664" height="336"/>
                                         <subviews>
                                             <imageView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="T-Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="MJ6-GF-RlX">
                                                 <rect key="frame" x="0.0" y="31" width="317" height="305"/>
                                             </imageView>
                                             <imageView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="T-Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="0Wf-ZG-Fsq">
-                                                <rect key="frame" x="317" y="31" width="317" height="305"/>
+                                                <rect key="frame" x="347" y="31" width="317" height="305"/>
                                             </imageView>
                                         </subviews>
+                                        <variation key="heightClass=regular-widthClass=regular" spacing="80"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="wYe-Sy-wKh" userLabel="fightBtnStack">
-                                        <rect key="frame" x="0.0" y="408" width="634" height="72"/>
+                                        <rect key="frame" x="0.0" y="408" width="664" height="72"/>
                                         <subviews>
                                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gsg-jD-T5F">
                                                 <rect key="frame" x="0.0" y="62" width="10" height="10"/>
@@ -99,7 +100,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1l1-X2-h6x" userLabel="playerOneFightButton">
-                                                <rect key="frame" x="55" y="0.0" width="212" height="72"/>
+                                                <rect key="frame" x="63" y="0.0" width="212" height="72"/>
                                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
                                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
                                                 <state key="normal" title="ATTACK!" backgroundImage="fightButton">
@@ -110,14 +111,14 @@
                                                 </connections>
                                             </button>
                                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KOh-ut-xy9">
-                                                <rect key="frame" x="312" y="62" width="10" height="10"/>
+                                                <rect key="frame" x="327" y="62" width="10" height="10"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="10" id="Lo1-6F-Ov1"/>
                                                     <constraint firstAttribute="width" constant="10" id="OzI-wS-vFn"/>
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8d-j9-TYQ" userLabel="playerTwoFightButton">
-                                                <rect key="frame" x="367" y="0.0" width="212" height="72"/>
+                                                <rect key="frame" x="390" y="0.0" width="212" height="72"/>
                                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="20"/>
                                                 <size key="titleShadowOffset" width="2.2250738585072014e-308" height="2.2250738585072014e-308"/>
                                                 <state key="normal" title="ATTACK!" backgroundImage="fightButton">
@@ -128,8 +129,8 @@
                                                     <action selector="playerTwoAttack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GA5-kD-6FN"/>
                                                 </connections>
                                             </button>
-                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-Jh-n7F">
-                                                <rect key="frame" x="624" y="62" width="10" height="10"/>
+                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9bc-Jh-n7F">
+                                                <rect key="frame" x="654" y="62" width="10" height="10"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="10" id="DNF-qD-bi0"/>
                                                     <constraint firstAttribute="height" constant="10" id="IFg-Cj-JIi"/>
@@ -311,10 +312,11 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-Ez-g8p" userLabel="gameOverButton">
-                                <rect key="frame" x="251" y="244" width="99" height="112"/>
+                                <rect key="frame" x="251" y="194" width="99" height="112"/>
                                 <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="100"/>
-                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
                                 <state key="normal" title="⇒">
+                                    <color key="titleColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -408,7 +410,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="hMf-1d-MMY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="gQL-30-UZU"/>
-                            <constraint firstItem="aLj-Ez-g8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lXs-9p-t4G"/>
+                            <constraint firstItem="aLj-Ez-g8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="lXs-9p-t4G"/>
                             <constraint firstItem="xVS-gD-G1d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ol0-fk-IRf"/>
                             <constraint firstItem="Jdz-Pz-GOr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="tRI-eJ-YlR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hMf-1d-MMY" secondAttribute="trailing" id="uEk-36-3V2"/>
