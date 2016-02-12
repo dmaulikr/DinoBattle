@@ -58,35 +58,14 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="hMf-1d-MMY" userLabel="BattleStack View">
                                 <rect key="frame" x="-32" y="110" width="664" height="480"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="d4D-8E-t0V" userLabel="hpLblStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="664" height="72"/>
-                                        <subviews>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qew-8d-SMb" userLabel="playerOneHpLabel">
-                                                <rect key="frame" x="0.0" y="31" width="332" height="41"/>
-                                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="20"/>
-                                                </variation>
-                                            </label>
-                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-Tf-oM7" userLabel="playerTwoHpLabel">
-                                                <rect key="frame" x="332" y="31" width="332" height="41"/>
-                                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
-                                                <nil key="highlightedColor"/>
-                                                <variation key="heightClass=compact-widthClass=compact">
-                                                    <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="20"/>
-                                                </variation>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="bottom" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ER4-p6-7h8" userLabel="playerStack">
-                                        <rect key="frame" x="0.0" y="72" width="664" height="336"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="664" height="408"/>
                                         <subviews>
                                             <imageView opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="T-Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="MJ6-GF-RlX">
-                                                <rect key="frame" x="0.0" y="31" width="317" height="305"/>
+                                                <rect key="frame" x="0.0" y="103" width="317" height="305"/>
                                             </imageView>
                                             <imageView opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="T-Rex1" translatesAutoresizingMaskIntoConstraints="NO" id="0Wf-ZG-Fsq">
-                                                <rect key="frame" x="347" y="31" width="317" height="305"/>
+                                                <rect key="frame" x="347" y="103" width="317" height="305"/>
                                             </imageView>
                                         </subviews>
                                         <variation key="heightClass=regular-widthClass=regular" spacing="80"/>
@@ -143,9 +122,8 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="wYe-Sy-wKh" firstAttribute="height" secondItem="hMf-1d-MMY" secondAttribute="height" multiplier="0.15" id="JWr-k2-YuD"/>
-                                    <constraint firstItem="ER4-p6-7h8" firstAttribute="height" secondItem="hMf-1d-MMY" secondAttribute="height" multiplier="0.7" id="da5-Hq-9ao"/>
+                                    <constraint firstItem="ER4-p6-7h8" firstAttribute="height" secondItem="hMf-1d-MMY" secondAttribute="height" multiplier="0.85" id="da5-Hq-9ao"/>
                                     <constraint firstAttribute="width" secondItem="hMf-1d-MMY" secondAttribute="height" multiplier="644:341" id="ueR-vU-ttg"/>
-                                    <constraint firstItem="d4D-8E-t0V" firstAttribute="height" secondItem="hMf-1d-MMY" secondAttribute="height" multiplier="0.15" id="yFz-ly-6qg"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -330,6 +308,28 @@
                                     <action selector="gameOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RiD-xJ-dOv"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Vkd-Tf-oM7" userLabel="playerTwoHpLabel">
+                                <rect key="frame" x="417" y="395" width="115" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="20"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HPlabel" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="qew-8d-SMb" userLabel="playerOneHpLabel">
+                                <rect key="frame" x="69" y="395" width="115" height="42"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="-1" height="1"/>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <fontDescription key="fontDescription" name="IowanOldStyle-Bold" family="Iowan Old Style" pointSize="20"/>
+                                </variation>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eAd-hx-jse" userLabel="nextButton">
                                 <rect key="frame" x="270" y="269" width="60" height="61"/>
                                 <state key="normal" image="nextButton"/>
@@ -341,7 +341,7 @@
                                 <rect key="frame" x="160" y="275" width="281" height="51"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedExtraBold" family="Futura" pointSize="30"/>
                                 <size key="titleShadowOffset" width="1" height="1"/>
-                                <state key="normal" title="Let the Battle BEGIN!">
+                                <state key="normal" title="Start the Battle!" backgroundImage="choiceButton">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -389,6 +389,7 @@
                                 <variation key="heightClass=compact" constant="40"/>
                                 <variation key="heightClass=regular-widthClass=regular" constant="100"/>
                             </constraint>
+                            <constraint firstItem="0Wf-ZG-Fsq" firstAttribute="centerY" secondItem="Vkd-Tf-oM7" secondAttribute="centerY" constant="-50" id="FkR-im-Nou"/>
                             <constraint firstItem="eAd-hx-jse" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KSh-gz-Sae"/>
                             <constraint firstItem="S1B-zf-QT7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Of4-t5-7uw"/>
                             <constraint firstItem="aLj-Ez-g8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcC-vT-f1t"/>
@@ -396,6 +397,7 @@
                                 <variation key="heightClass=compact" constant="20"/>
                             </constraint>
                             <constraint firstItem="cAa-Pq-6CE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="W2M-o2-RIo"/>
+                            <constraint firstItem="MJ6-GF-RlX" firstAttribute="centerX" secondItem="qew-8d-SMb" secondAttribute="centerX" id="W42-IE-AKv"/>
                             <constraint firstItem="hMf-1d-MMY" firstAttribute="bottom" secondItem="twn-WT-5gE" secondAttribute="bottom" constant="-10" id="Xkn-Lz-Ef2">
                                 <variation key="heightClass=regular-widthClass=regular" constant="-50"/>
                             </constraint>
@@ -405,6 +407,7 @@
                             <constraint firstItem="m9E-Sj-RdN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="100" id="ZoR-Fa-rSb">
                                 <variation key="heightClass=compact" constant="60"/>
                             </constraint>
+                            <constraint firstItem="MJ6-GF-RlX" firstAttribute="centerY" secondItem="qew-8d-SMb" secondAttribute="centerY" constant="-50" id="aER-SE-jm6"/>
                             <constraint firstItem="S1B-zf-QT7" firstAttribute="bottom" secondItem="18s-ox-0zV" secondAttribute="top" id="box-74-qsc"/>
                             <constraint firstItem="S1B-zf-QT7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c59-lm-tle"/>
                             <constraint firstItem="xVS-gD-G1d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dxQ-q0-icB"/>
@@ -415,6 +418,7 @@
                                 <variation key="heightClass=compact-widthClass=regular" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="hMf-1d-MMY" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.8" id="gQL-30-UZU"/>
+                            <constraint firstItem="0Wf-ZG-Fsq" firstAttribute="centerX" secondItem="Vkd-Tf-oM7" secondAttribute="centerX" id="ij5-MR-o2N"/>
                             <constraint firstItem="aLj-Ez-g8p" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="lXs-9p-t4G"/>
                             <constraint firstItem="xVS-gD-G1d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ol0-fk-IRf"/>
                             <constraint firstItem="Jdz-Pz-GOr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="tRI-eJ-YlR"/>
@@ -435,6 +439,12 @@
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <exclude reference="7hE-h1-VoO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="Vkd-Tf-oM7"/>
+                                <include reference="qew-8d-SMb"/>
                             </mask>
                         </variation>
                     </view>

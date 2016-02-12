@@ -204,7 +204,7 @@ class ViewController: UIViewController {
 		
 		player1.attemptAttack(player1.attack, defense: player2.defense, hp: &player2.hp)
 		infoLabel.text = "\(roar2Name) Hit!!"
-		playerTwoHpLabel.text = "\(player2.hp) HP"
+		playerTwoHpLabel.text = "\(player2.hp)hp"
 		
 		if !player2.isAlive {
 			infoLabel.text = "\(roar1Name) Wins!"
@@ -225,7 +225,7 @@ class ViewController: UIViewController {
 
 		player2.attemptAttack(player2.attack, defense: player1.defense, hp: &player1.hp)
 		infoLabel.text = "\(roar1Name) Hit!!"
-		playerOneHpLabel.text = "\(player1.hp) HP"
+		playerOneHpLabel.text = "\(player1.hp)hp"
 		
 		if !player1.isAlive {
 
@@ -347,8 +347,8 @@ class ViewController: UIViewController {
         playerTwoFightButton.hidden = false
         playerOneHpLabel.hidden = false
         playerTwoHpLabel.hidden = false
-        playerOneHpLabel.text = "\(player1.hp) HP"
-        playerTwoHpLabel.text = "\(player2.hp) HP"
+        playerOneHpLabel.text = "\(player1.hp)hp"
+        playerTwoHpLabel.text = "\(player2.hp)hp"
     }
 	
 	@IBAction func gameOver(sender: AnyObject) {
