@@ -393,6 +393,7 @@
                             <constraint firstItem="eAd-hx-jse" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KSh-gz-Sae"/>
                             <constraint firstItem="S1B-zf-QT7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Of4-t5-7uw"/>
                             <constraint firstItem="aLj-Ez-g8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcC-vT-f1t"/>
+                            <constraint firstItem="hMf-1d-MMY" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="R6T-tB-73Y"/>
                             <constraint firstItem="Sak-qS-tAP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="V9P-XE-Hc8">
                                 <variation key="heightClass=compact" constant="20"/>
                             </constraint>
@@ -434,11 +435,17 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="7hE-h1-VoO"/>
+                                <exclude reference="R6T-tB-73Y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <exclude reference="7hE-h1-VoO"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="R6T-tB-73Y"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
